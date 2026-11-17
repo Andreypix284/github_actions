@@ -34,6 +34,8 @@ jobs: # Секция jobs определяет этапы процесса
         run: npm run build # Команда для сборки приложения из вашего блока scripts
       - name: Setup Pages # Шаг конфигурации сборки 
         uses: actions/configure-pages@v4 # Используется готовый actions
+      - name: Show dist content
+        run: ls -la ./dist
       - name: Upload artifact # Загружаем артефакты
         uses: actions/upload-pages-artifact@v3
         with:
