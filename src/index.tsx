@@ -8,8 +8,7 @@ const domNode = document.getElementById('root') as HTMLDivElement;
 const root = createRoot(domNode);
 root.render(
 	<StrictMode>
-		<BrowserRouter
-			basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/'}>
+		<BrowserRouter basename={process.env.PUBLIC_PATH ? process.env.PUBLIC_PATH : '/'}>
 			<App />
 		</BrowserRouter>
 	</StrictMode>
